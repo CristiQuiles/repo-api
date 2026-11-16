@@ -1,0 +1,240 @@
+{
+  "info": {
+    "_postman_id": "278733d6-3748-4acc-b95c-6d287ce1de91",
+    "name": "RICKANDMORTY 2026",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "59285088",
+    "_collection_link": "https://go.postman.co/collection/59285088-278733d6-3748-4acc-b95c-6d287ce1de91?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Conseguir todos los personajes",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://rickandmortyapi.com/api/character",
+          "protocol": "https",
+          "host": [
+            "rickandmortyapi",
+            "com"
+          ],
+          "path": [
+            "api",
+            "character"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Conseguir el personaje número 85",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://rickandmortyapi.com/api/character/85",
+          "protocol": "https",
+          "host": [
+            "rickandmortyapi",
+            "com"
+          ],
+          "path": [
+            "api",
+            "character",
+            "85"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Conseguir el personaje número 85",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://rickandmortyapi.com/api/character/85",
+              "protocol": "https",
+              "host": [
+                "rickandmortyapi",
+                "com"
+              ],
+              "path": [
+                "api",
+                "character",
+                "85"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "Date",
+              "value": "Wed, 11 Nov 2026 19:20:43 GMT"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Server",
+              "value": "cloudflare"
+            },
+            {
+              "key": "x-xss-protection",
+              "value": "1; mode=block"
+            },
+            {
+              "key": "Nel",
+              "value": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"1e2-+eSrDDVu3eJ/h5MwxYG695mXWC4\""
+            },
+            {
+              "key": "X-Proxy-Cache",
+              "value": "MISS"
+            },
+            {
+              "key": "Cache-Control",
+              "value": "public, max-age=7776000, immutable"
+            },
+            {
+              "key": "x-frame-options",
+              "value": "SAMEORIGIN"
+            },
+            {
+              "key": "Age",
+              "value": "6304099"
+            },
+            {
+              "key": "cf-cache-status",
+              "value": "HIT"
+            },
+            {
+              "key": "Report-To",
+              "value": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=XRhLi1E5%2FvWShJ0K%2FAQsV1riGNLK7mrFfX4ma1bgzuvbibS005BpyMyk8WS2P51l2kFlThNi9EjbzxMoKexRUiV%2Fe7CifcophIQcE%2BYjrpdNBFV%2B%2B1KlDsxNw1yxYehDhQfk0AOW\"}]}"
+            },
+            {
+              "key": "expect-ct",
+              "value": "max-age=86400, enforce"
+            },
+            {
+              "key": "referrer-policy",
+              "value": "same-origin"
+            },
+            {
+              "key": "x-content-type-options",
+              "value": "nosniff"
+            },
+            {
+              "key": "Content-Encoding",
+              "value": "br"
+            },
+            {
+              "key": "CF-RAY",
+              "value": "a58fa7e7fe3acb4a-IAD"
+            },
+            {
+              "key": "alt-svc",
+              "value": "h3=\":443\"; ma=86400"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n  \"id\": 85,\n  \"name\": \"Cyclops Morty\",\n  \"status\": \"Alive\",\n  \"species\": \"Humanoid\",\n  \"type\": \"\",\n  \"gender\": \"Male\",\n  \"origin\": {\n    \"name\": \"unknown\",\n    \"url\": \"\"\n  },\n  \"location\": {\n    \"name\": \"Citadel of Ricks\",\n    \"url\": \"https://rickandmortyapi.com/api/location/3\"\n  },\n  \"image\": \"https://rickandmortyapi.com/api/character/avatar/85.jpeg\",\n  \"episode\": [\n    \"https://rickandmortyapi.com/api/episode/10\",\n    \"https://rickandmortyapi.com/api/episode/28\"\n  ],\n  \"url\": \"https://rickandmortyapi.com/api/character/85\",\n  \"created\": \"2017-11-30T20:49:52.133Z\"\n}"
+        }
+      ]
+    },
+    {
+      "name": "Filtros vivos y hombres",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://rickandmortyapi.com/api/character/?status=alive&gender=male",
+          "protocol": "https",
+          "host": [
+            "rickandmortyapi",
+            "com"
+          ],
+          "path": [
+            "api",
+            "character",
+            ""
+          ],
+          "query": [
+            {
+              "key": "status",
+              "value": "alive"
+            },
+            {
+              "key": "gender",
+              "value": "male"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Solo un personaje",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {",
+              "    pm.response.to.have.status(200);",
+              "});",
+              "",
+              "pm.test(\"Validate character name\", function () {",
+              "    var jsonData = pm.response.json();",
+              "    pm.expect(jsonData.name).to.eql(\"Rick Sanchez\");",
+              "});",
+              "",
+              "pm.test(\"Response time is less than 1000ms\", function() {",
+              "    pm.expect(pm.response.responseTime).to.be.below(1000);",
+              "});"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://rickandmortyapi.com/api/character/1",
+          "protocol": "https",
+          "host": [
+            "rickandmortyapi",
+            "com"
+          ],
+          "path": [
+            "api",
+            "character",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
